@@ -1,0 +1,41 @@
+.customers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.customers__list {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &-link,
+  &:focus &-link {
+    color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover &-link &-icon,
+    &:hover &-link &-icon {
+      fill: #2196f3;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

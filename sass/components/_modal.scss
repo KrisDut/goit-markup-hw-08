@@ -1,0 +1,229 @@
+.modal {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+
+.animated-modal {
+  animation: animateModal 1000ms;
+}
+
+@keyframes animateModal {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate3d(0, 0, 1, 720deg);
+  }
+}
+
+.modal__close {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal__close-text {
+  font-size: 30px;
+}
+
+.modal__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__label-box:hover,
+.modal__label-box:focus {
+  color: #2196f3;
+  fill: #2196f3;
+
+  &:hover .icon-head,
+  &:focus .icon-head {
+    color: #2196f3;
+    fill: #2196f3;
+
+    &:hover .icon-head .modal__input,
+    &:focus .icon-head .modal__input {
+      color: #2196f3;
+      fill: #2196f3;
+    }
+  }
+
+  &:hover .icon-modalphone,
+  &:focus .icon-modalphone {
+    color: #2196f3;
+    fill: #2196f3;
+
+    &:hover .icon-modalphone .modal__input,
+    &:focus .icon-modalphone .modal__input {
+      color: #2196f3;
+      fill: #2196f3;
+    }
+  }
+
+  &:hover .icon-modalmail,
+  &:focus .icon-modalmail {
+    color: #2196f3;
+    fill: #2196f3;
+
+    &:hover .icon-modalmail .modal__input,
+    &:focus .icon-modalmail .modal__input {
+      color: #2196f3;
+      fill: #2196f3;
+    }
+  }
+}
+
+.modal__label-text {
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 116%;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.modal__input {
+  position: relative;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+}
+
+.modal__feedback {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+}
+
+.check-bird::before {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  outline: 1px solid #000;
+  border-radius: 2px;
+  transition: all 250ms;
+  background-position: 50% 50%;
+  margin-right: 7px;
+}
+
+.policy:checked + .check-bird::before {
+  background-color: #2196f3;
+  background-image: url("../images/checkbox-ptaszek.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: 1px solid #2196f3;
+  border: none;
+}
+
+.policy__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 2px;
+}
+
+.policy__text-reg {
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.icon-head {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 14px 15px;
+  z-index: 999;
+}
+
+.icon-modalphone {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin: 14px 15px;
+  z-index: 999;
+}
+
+.icon-modalmail {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  margin: 14px 15px;
+  z-index: 999;
+}
+
+input:focus-within,
+input:hover,
+textarea:focus-within,
+textarea:hover {
+  outline: none;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input:focus-within + .icon-head:hover {
+  fill: #2196f3;
+}
