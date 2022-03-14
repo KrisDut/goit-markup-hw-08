@@ -1,11 +1,41 @@
-.section4-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section4-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    display: none;
+  }
+}
 
-  color: #212121;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section4-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .section4-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    color: #212121;
+  }
 }

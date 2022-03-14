@@ -18,3 +18,22 @@ figure {
 a {
   text-decoration: none;
 }
+
+textarea {
+  resize: none;
+
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.section3-index {
+  background-color: white;
+  padding-bottom: 94px;
+}

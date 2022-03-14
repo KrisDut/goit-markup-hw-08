@@ -1,102 +1,344 @@
-.footer {
-  display: flex;
-  height: 252px;
-  background: #2f303a;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    width: 480px;
+    display: flex;
+    background: #2f303a;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__contact {
+    width: 100%;
+    display: flex;
+    padding: 60px 0 0 0;
+    flex-direction: column;
+  }
+
+  .footer__contact-web {
+    display: flex;
+    justify-content: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+  }
+
+  .footer__contact-studio {
+    color: #ffffff;
+  }
+
+  .footer__contact-street {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 20px;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
+
+  .footer__contact-mail {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__contact-phone {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .footer__join-title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+
+  .footer__social {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
-.footer__block {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  margin: 0;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    width: 768px;
+    display: flex;
+    background: #2f303a;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__contact {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  .footer__contact-web {
+    display: flex;
+    justify-content: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+  }
+
+  .footer__contact-studio {
+    color: #ffffff;
+  }
+
+  .footer__contact-street {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 20px;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
+
+  .footer__contact-mail {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__contact-phone {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 55px 0;
+  }
+
+  .footer__join-title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+
+  .footer__social {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
-.footer__contact {
-  width: 285px;
-  height: 190px;
-  display: flex;
-  padding: 0px;
-  padding-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: -40px;
-}
+@media screen and (min-width: 769px) {
+  .footer {
+    display: flex;
+    height: 252px;
+    background: #2f303a;
+  }
 
-.footer__contact-web {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 119%;
-  /* identical to box height */
+  .footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+  }
 
-  letter-spacing: 0.03em;
+  .footer__contact {
+    display: flex;
+    padding: 0px;
 
-  color: #2196f3;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
-.footer__contact-studio {
-  color: #ffffff;
-}
+  .footer__contact-web {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
 
-.footer__contact-street {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 171%;
-  /* or 171% */
-  margin-top: 20px;
-  letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-  color: #ffffff;
-}
+    color: #2196f3;
+  }
 
-.footer__contact-mail {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 171%;
-  /* or 171% */
-  margin-top: 9px;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.6);
-}
+  .footer__contact-studio {
+    color: #ffffff;
+  }
 
-.footer__contact-phone {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 171%;
-  /* or 171% */
-  margin-top: 9px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+  .footer__contact-street {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 20px;
+    letter-spacing: 0.03em;
 
-.footer__join {
-  display: flex;
-  width: 206px;
-  padding-top: 75px;
-  padding-left: 68px;
-  padding-bottom: 10px;
-}
+    color: #ffffff;
+  }
 
-.footer__join-title {
-  width: 113px;
-  height: 16px;
-  text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: 0.03em;
+  .footer__contact-mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-  color: #ffffff;
+  .footer__contact-phone {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    /* or 171% */
+    margin-top: 9px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__join {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 108px;
+    padding-bottom: 20px;
+  }
+
+  .footer__join-title {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
 }

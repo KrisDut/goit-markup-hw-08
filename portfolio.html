@@ -22,12 +22,16 @@
 <!-- =====> MENU <===== -->
 
     <header class="header">
-      <div class="container">
+      <div class="navigation">
         <ul class="nav">
           <li>
             <a href="index.html" class="nav__webstudio"
               >Web<span class="nav__webstudio-color">Studio
                 </span></a>
+          </li>
+          <li>
+            <svg class="hamburger" data-mobile-menu-open>
+            <use href="./images/icons.svg#icon-hamburger"></use>
           </li>
           <li><a href="index.html" class="nav__agencja-p">Agencja</a></li>
           <li>
@@ -36,18 +40,26 @@
               </svg>
           </li>
           <li><a href="" class="nav__kontakt">Kontakt</a></li>
-
+       </ul>
+        <ul class="nav-2">
           <li>
             <a href="mailto:info@devstudio.com" class="nav__mail">
               <svg class="nav__mail-icon" fill="currentColor">
-                <use href="./images/icons.svg#icon-mail"></use> 
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-mail"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li>
             <a href="tel:+48111111111" class="nav__phone"
-              ><svg class="nav__phone-icon" fill="currentColor" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-phone"></use>
-                </svg>+48 111 111 111</a>
+              ><svg
+                class="nav__phone-icon"
+                fill="currentColor"
+                width="10px"
+                height="16px"
+              >
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
       </div>
@@ -56,7 +68,7 @@
 
 <!-- =====> SECTION 1 PORTFOLIO <===== -->
 
-        <section>
+        <section class="container">
             <ul class="buttons-list">       
               <li><a href="#"><button type="button" class="buttons-list__item"><p class="buttons-list__item-text">Wszystkie</p></button></a></li>
               <li><a href="#"><button type="button" class="buttons-list__item"><p class="buttons-list__item-text">Strony</p></button></a></li>
@@ -69,7 +81,7 @@
               <li><a href="#">
                 <figure class="item-portfolio">
                   <div class="item-portfolio__box">
-                <img 
+                <img class="item-portfolio__img"
                 src="images/laptop.jpg"
                 alt="laptop"
                 width="370"
@@ -90,7 +102,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img src="images/nba.jpg" alt="nba" width="370" height="294" />
+              <img class="item-portfolio__img" src="images/nba.jpg" alt="nba" width="370" height="294" />
               <div class="overlay"><p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. 
                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
                   </div>
@@ -103,7 +115,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/seafood.jpg"
                 alt="seafood"
                 width="370"
@@ -123,7 +135,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/headphones.jpg"
                 alt="headphones"
                 width="370"
@@ -140,7 +152,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/box.jpg"
                 alt="box"
                 width="370"
@@ -157,7 +169,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/monitor.jpg"
                 alt="monitor"
                 width="370"
@@ -176,7 +188,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/book.jpg"
                 alt="book"
                 width="370"
@@ -193,7 +205,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/letters.jpg"
                 alt="letters"
                 width="370"
@@ -210,7 +222,7 @@
           <li><a href="#">
             <figure class="item-portfolio">
               <div class="item-portfolio__box">
-              <img
+              <img class="item-portfolio__img"
                 src="images/mac.jpg"
                 alt="mac"
                 width="370"
@@ -231,11 +243,12 @@
 
 <!-- =====> FOOTER <===== -->
 
- <footer class="footer">
+ 
+    <footer class="footer">
       <div class="container">
         <div class="footer__block">
-          <div class="footer__contact">
-            <ul>
+          <ul class="footer__contact">
+            
               <li class="footer__contact-web">
                 Web<span class="footer__contact-studio">Studio</span>
               </li>
@@ -243,12 +256,11 @@
               <li href="mailto:info@devstudio.com" class="footer__contact-mail">info@example.com</li>
               <li class="footer__contact-phone">+48 111 111 111</li>
             </ul>
-          </div>
-          <div>
+          
+         
             <div class="footer__join">
               <h2 class="footer__join-title">Dołącz do nas</h2>
-            </div>
-            <div>
+            
               <ul class="footer__social">
                 <li class="footer__social-circle">
                   <a href="#" class="footer__social-link">
@@ -296,36 +308,70 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="footer__newsletter">
-            <ul>
-              <li>
-                <p class="footer__newsletter-join">ZAPISZ SIĘ DO NEWSLETTERA</p>
-              </li>
-              <li>
+            
+            <div class="dd">
+                <h2 class="footer__newsletter-join">ZAPISZ SIĘ DO NEWSLETTERA</h2>
+            
                 <form name="send-newsletter" autocomplete="on" novalidate class="footer-form">
                   <label for="nletter" >
                   <input type="email" name="email" id="nletter" placeholder="Email" class="footer-form__label footer-form__all-labels"/>
                   </label>
-
+                
                   <button type="submit" class="footer__button">
                     <div class="footer__button-text">Zapisz się</div>
-                    <div> 
                       <svg
                         class="footer__button-icon"
                         fill="#FFFFFF"
                         >
                         <use href="./images/icons.svg#icon-plane"></use>
                       </svg>
-                      </div>
                   </button>
                 </form>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
       </div>
     </footer>
+
+     <!-- =====> MODAL <===== -->
+
+
+<div class="backdrop is-hidden" data-mobile-menu>
+  <div class="mobile-menu" data-mobile-menu-window>
+    <div>
+      <svg class="mobile-menu__close" data-mobile-menu-close>
+      <use href="./images/icons.svg#icon-hamburger-close">
+      </use>
+    </div>
+    <div>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item">
+          <a href="/index.html">Aplikacja</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__list-item"><a href="#">Kontakt</a></li>
+        <li class="mobile-menu__list-item mobile-menu__list-phone">
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li class="mobile-menu__list-item mobile-menu__list-mail">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="mobile-menu__social">
+        <li class="mobile-menu__social-item"><a href="#"></a>Instagram</li>
+        <li class="mobile-menu__social-item"><a href="#"></a>Twitter</li>
+        <li class="mobile-menu__social-item"><a href="#"></a>Facebook</li>
+        <li class="mobile-menu__social-item"><a href="#"></a>LinkedIn</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

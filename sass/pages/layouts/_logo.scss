@@ -1,21 +1,67 @@
-.nav__webstudio {
-  display: flex;
-  align-items: stretch;
-  align-content: center;
-  height: 31px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 119%;
-  /* identical to box height */
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  cursor: pointer;
-  margin-right: 93px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav__webstudio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    cursor: pointer;
+  }
 }
 
-.nav__webstudio-color {
-  color: #212121;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav__webstudio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 75px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav__webstudio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    cursor: pointer;
+  }
+  .nav__webstudio {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    height: 31px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 119%;
+    /* identical to box height */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    cursor: pointer;
+    margin-right: 93px;
+  }
+
+  .nav__webstudio-color {
+    color: #212121;
+  }
 }

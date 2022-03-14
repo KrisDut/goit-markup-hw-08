@@ -1,25 +1,89 @@
-.apps__img {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .apps__img {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    display: none;
+  }
+
+  .apps__strap {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .apps__strap-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    display: none;
+  }
 }
 
-.apps__strap {
-  display: flex;
-  position: absolute;
-  height: 70px;
-  width: 100%;
-  background: rgba(47, 48, 58, 0.8);
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .apps__img {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    display: none;
+  }
+
+  .apps__strap {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .apps__strap-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    display: none;
+  }
 }
 
-.apps__strap-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+@media screen and (min-width: 769px) {
+  .apps__img {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+  }
+
+  .apps__strap {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .apps__strap-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
