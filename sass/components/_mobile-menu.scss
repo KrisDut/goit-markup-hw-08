@@ -1,0 +1,110 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 480px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+  }
+
+  .animated-mobile-menu {
+    animation: animateMobile 1000ms;
+  }
+
+  @keyframes animateMobile {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  .mobile-menu__close {
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      fill: #2196f3;
+    }
+  }
+
+  .mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px 32px;
+    margin: 0;
+
+    &-item {
+      padding-bottom: 32px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      text-decoration: none !important;
+      color: #212121;
+    }
+
+    &-item:hover {
+      color: #2196f3;
+    }
+
+    &-phone {
+      color: #2196f3;
+      margin-top: 270px;
+    }
+
+    &-mail {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #757575;
+    }
+  }
+
+  .mobile-menu__social {
+    display: flex;
+    padding-bottom: 48px;
+    margin-right: 83px;
+    justify-content: space-between;
+
+    &-item {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 122%;
+      letter-spacing: 0.02em;
+      color: #2196f3;
+    }
+  }
+
+  .mobile-menu__social-item:nth-child(-n + 3)::after {
+    content: "";
+    width: 0px;
+    height: 22px;
+    margin: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
